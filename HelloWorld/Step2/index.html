@@ -9,6 +9,14 @@
 		data-sap-ui-theme="sap_belize"
 		data-sap-ui-libs="sap.m">
 	</script>
+    <script type="text/javascript">
+		sap.ui.getCore().attachInit(function () {
+			// create a mobile app and display page1 initially
+			var app = new sap.m.App("myApp", {
+				initialPage: "page1"
+			});
+		});
+	</script>
 </head>
 <body class="sapUiBody" id="content">
 </body>
